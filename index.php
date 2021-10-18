@@ -347,7 +347,7 @@ $cachetime = 999999;
 if ( file_exists( $cachefile ) ) {
 	echo "<!-- Cached copy, generated " . date( 'H:i', filemtime( $cachefile ) ) . " -->\n";
 	include( $cachefile );
-	echo '<script type="text/javascript" >
+	echo '<script type="text/javascript">
 	jQuery(document).ready(function($) {
 		var data = {
 			action: "my_action",
@@ -374,7 +374,7 @@ ob_start(); // Запуск буфера вывода
 echo $result;
 
 
-	echo '<script type="text/javascript" >
+	echo '<script type="text/javascript">
 	jQuery(document).ready(function($) {
 		var data = {
 			action: "my_action",
