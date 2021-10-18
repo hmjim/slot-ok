@@ -1,0 +1,2413 @@
+.loader{ 
+    background:url('/wp-content/themes/gump/img/btn_game_active.png') no-repeat; 
+    background:url('/wp-content/themes/gump/img/cont_btn_2.png') no-repeat; 
+    background:url('/wp-content/themes/gump/img/cont_btn_2_activ.png') no-repeat; 
+    background:url('/wp-content/themes/gump/img/cont_btn_1_activ.png') no-repeat; 
+    margin-left:-1000px; 
+    
+}
+#cont_info_kaz_block_1 #c_b_o {
+    white-space: nowrap;
+}
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+0.0 - Genericons
+1.0 - Reset
+2.0 - Responsive Grid
+3.0 - Typography
+4.0 - Elements
+5.0 - Forms
+	5.1 - Contact Form 7
+6.0 - Header
+	6.1 - Links
+	6.2 - Logo and Title
+	6.3 - Menus
+7.0 - Accessibility
+8.0 - Alignments
+9.0 - Clearings
+10.0 - Widgets
+	10.1 - Social Widget
+11.0 - Site Content
+	11.1 - Posts and pages
+	11.2 - Asides
+	11.3 - Gallery
+	11.4 - Image
+	11.5 - Comments
+12.0 - Footer
+13.0 - Infinite scroll
+14.0 - Media
+	14.1 - Captions
+	14.2 - Galleries
+15.0 Media Queries
+16.0 Print
+--------------------------------------------------------------*/
+/*======================================
+Верстка: Котенко Aлександр / 3.01.2015.
+======================================*/
+ 
+html {
+    /* это для того, чтобы страница не дёргалась
+    при переходе между полными и пустыми страницами */
+    
+    height: auto;
+    width: 100%;
+    
+}
+
+body {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    background-color: #011116;
+    background-image: url('/wp-content/themes/gump/img/top_bg.png'); /* Путь к фоновому рисунку */
+    background-position: top, center; /* Положение фона */
+    background-repeat: no-repeat; /* Отменяем повторение фона */
+    font-family: sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+    
+
+
+    
+}
+
+body a{
+    color: #fff;
+}
+body a:hover{
+    color: #59ebe5;
+}
+
+body h2{
+    color: #ffdc15;
+    font-weight: normal;
+	    margin: 16px 14px 9px 9px;
+
+}
+
+body h3{
+    color: #ffdc15;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+#body_bg{
+    display: block;
+    position: absolute;
+    width: 100%;
+    background-image: url('/wp-content/themes/gump/img/fotter_bg.png'); /* Путь к фоновому рисунку */
+    background-position: bottom, center; /* Положение фона */
+    background-repeat: no-repeat; /* Отменяем повторение фона */
+}
+
+#page-wrap {
+    display: block;
+    width: 950px;
+    margin: 0px auto ;
+}
+
+#page {
+    display: block;
+    width: 950px;
+    height: 100%;
+    float: left;
+}
+
+#body {
+    display: block;
+    width: 950px;
+    height: 100%;
+    float: left;
+    margin: 0 0 20px 0;
+}
+
+#header {
+    display: block;
+    width: 950px;
+    height: 100px;
+}
+
+.logos{
+    width: 545px;
+    height: 160px;
+    margin:  0 0 0 200px;
+    float: left;
+    
+}
+
+/***************************** top menu stapt *****************************/
+
+#top_menu{
+    display: block;
+    width: 943px;
+    height: 57px;
+    margin: 177px auto  0px auto ;
+    padding: 0px 0 0 0;
+    background: url('/wp-content/themes/gump/img/top_menu_bg.png') no-repeat;
+}
+#top_menu ul{
+    width: 725px;
+    margin: 0px 0 0 130px;
+    font-size: 13pt;
+    float: none;
+    
+}
+#top_menu ul ul{
+    width: 100%;
+    margin: 10px 0 0 0px;
+}
+
+#top_menu .dropdown span{
+    display: block;
+    width: 2px;
+    height: 38px;
+    margin-top: 9px;
+    background: url('/wp-content/themes/gump/img/top_menu_razdelitel.png') no-repeat;
+    float: left;
+}
+
+ul.dropdown li { position: relative; }
+ ul.dropdown,
+ ul.sub-menu {
+ list-style-type: none;
+ padding: 0;
+ }
+ ul.sub-menu {
+ position: absolute; 
+ left: -9999px;
+ }
+ ul.dropdown li.dropdown-top {
+ display: inline;
+ float: left;
+ padding: 20px 20px 0px 20px;
+ height: 34px;
+ margin: -1px 0 0 0;
+ background: url('/wp-content/themes/gump/img/top_menu_razdelitel.png') no-repeat center right;
+ }
+ 
+ ul.dropdown li.dropdown-top:hover {
+    background-image: url('/wp-content/themes/gump/img/top_menu_a_hover_bg.png');  /* Путь к фоновому рисунку */
+    background-position: top, center; /* Положение фона */
+    background-repeat: no-repeat; /* Отменяем повторение фона */
+    background: url('/wp-content/themes/gump/img/top_menu_a_hover_bg.png') no-repeat center,
+    url('/wp-content/themes/gump/img/top_menu_razdelitel.png') no-repeat center right;
+  
+
+ }
+ 
+ 
+ 
+ ul.dropdown li.dropdown-top a {
+ padding: 0px 5px 0px;
+ display: block;
+ color: #ffffff;
+ text-decoration: none;
+ text-transform: uppercase;
+ }
+ ul.dropdown a.dropdown-top { }
+ .menu .dropdown-top a:hover { padding: 0px 5px 0px; color: #59ebe5;}
+ ul.dropdown li.dropdown-top:hover .sub-menu {
+ display: block;
+ left: 0;
+ width: 193px;
+ }
+ 
+ 
+ 
+ 
+  ul.dropdown li.dropdown-top-lost {
+ display: inline;
+ float: left;
+ padding: 20px 20px 0px 20px;
+ height: 34px;
+ margin: -1px 0 0 0;
+
+ }
+ 
+ ul.dropdown li.dropdown-top-lost:hover {
+    background-image: url('/wp-content/themes/gump/img/top_menu_a_hover_bg.png'); /* Путь к фоновому рисунку */
+    background-position: top, center; /* Положение фона */
+    background-repeat: no-repeat; /* Отменяем повторение фона */
+    background: url('/wp-content/themes/gump/img/top_menu_a_hover_bg.png');
+  
+
+ }
+ 
+ 
+  ul.dropdown li.dropdown-top-lost a {
+ padding: 0px 5px 0px;
+ display: block;
+ color: #ffffff;
+ text-decoration: none;
+ text-transform: uppercase;
+ }
+ ul.dropdown a.dropdown-top-lost { }
+ .menu .dropdown-top-lost a:hover { padding: 0px 5px 0px; color: #59ebe5;}
+
+
+ 
+ 
+ /********************** if menu start *********************/
+ 
+  ul.dropdown li.dropdown-top-m {
+ display: inline;
+ float: left;
+ padding: 20px 20px 0px 20px;
+ height: 34px;
+ margin: -1px 0 10px 0;
+ text-transform: uppercase;
+ background: url('/wp-content/themes/gump/img/top_menu_razdelitel.png') no-repeat center right;
+ }
+ 
+ ul.dropdown li.dropdown-top-m:hover {
+    background-color: #1f1f1f;
+    margin: 7px 0 8px 0;
+    padding: 12px 20px 8px 20px;
+    color: #59ebe5;
+     /*background: url('/wp-content/themes/gump/img/bg_m.png') no-repeat top right;*/
+     
+ }
+ 
+ ul.dropdown li.dropdown-top-m a {
+ padding: 0px 5px 0px;
+ display: block;
+ color: #ffffff;
+ text-decoration: none;
+ text-transform: none;
+ }
+ ul.dropdown a.dropdown-top-m { }
+ 
+  .menu  .dropdown-top-m a:hover { padding: 0px 5px 0px; color: #59ebe5;}
+ ul.dropdown li.dropdown-top-m:hover .sub-menu {
+ display: block;
+ left: 0;
+ }
+ 
+ /********************** if menu end *********************/
+ 
+ ul.dropdown .sub-menu{ 
+    background: #1f1f1f;
+    display: block;
+    margin-top: 20px;
+    z-index: 1;
+ }
+ ul.dropdown .sub-menu li{ 
+    border-bottom: 1px solid #454545;
+    padding: 7px 10px 8px 20px;
+    font-size: 11pt;
+ }
+ 
+ ul.dropdown .sub-menu li:hover{ 
+    border-bottom: 1px solid #454545;
+    background: #1a1a1a;
+ }
+ ul.dropdown .sub-menu li:hover a{ 
+    color: #59ebe5;
+ }
+ 
+  ul.dropdown .sub-menu div{ 
+    background: #1f1f1f;
+    height: 5px;
+    display: block;
+    width: 100%;
+ }
+ 
+
+ 
+/***************************** top menu end *****************************/
+
+/***************************** zalu start *******************************/
+
+#zalu{
+    display: block;
+    margin: 10px auto 5px auto;
+    width: 275px;
+    height: 42px;
+    background: url('/wp-content/themes/gump/img/zalu.png');
+}
+
+#zalu_norm_w{
+    width: 960px;
+    margin: 0 auto;
+    padding: 10px 0 0 0;
+}
+
+#zalu_top_bg{
+    
+    position: absolute;
+    margin-top: 0px;
+    left: 0;
+    width: 100%;
+    height: 13px;
+    background: url(/wp-content/themes/gump/img/zalu_top_bg.png); 
+}
+#zalu_but_bg{
+    
+    position: absolute;
+    margin-top: 383px;
+    left: 0;
+    width: 100%;
+    height: 13px;
+    background: url(/wp-content/themes/gump/img/zalu_but_bg.png); 
+}
+#zalu_bg{
+    
+    position: absolute;
+    margin-top: 13px;
+    left: 0;
+    width: 100%;
+    height: 370px;
+    background: url(/wp-content/themes/gump/img/zalu_bg.png);   
+}
+
+#zalu_game{
+    width: 220px;
+    height: 160px;
+    float: left;
+    margin: 10px 10px 0 10px;
+    border-bottom: 1px dashed #14808f;
+}
+
+#zalu_game_img img{
+    border: 6px solid #183e4c;
+    border-radius: 5px 5px 5px 5px;
+}
+
+#zalu_game_btn a{
+    display: block;
+    width: 98px;
+    height: 26px;
+    margin: 10px auto 0 auto;
+    background: url(/wp-content/themes/gump/img/btn_game.png); 
+}
+
+#zalu_game_btn a:hover{
+    width: 98px;
+    height: 26px;
+    background: url(/wp-content/themes/gump/img/btn_game.png) no-repeat 0px -26px;
+}
+
+/************************* podskazka start***************************/
+
+#zalu_game_img {
+    position:relative;
+}
+ 
+#zalu_game_img span {
+    display: none;
+    color: #fff;
+    font-size: 12px;
+}
+
+#zalu_game_img span b{
+    color: #ffdc15;
+    font-weight: normal;
+}
+
+#zalu_game_img:hover span {
+    display: block;
+    position: absolute;
+    width: 220px;
+    z-index: 1;
+}
+
+#zalu_game_img:hover span #p_t {
+    background: url(/wp-content/themes/gump/img/p_t.png) no-repeat; 
+    width: 220px;
+    height: 17px;
+    margin: 10px 0 0 0;
+}
+#zalu_game_img:hover span #p_c{
+    background: url(/wp-content/themes/gump/img/p_c.png) repeat-y; 
+    width: 220px;
+    padding: 6px 10px 6px 10px;
+}
+#zalu_game_img:hover span #p_b{
+    background: url(/wp-content/themes/gump/img/p_b.png) no-repeat; 
+    width: 220px;
+    height: 6px;
+}
+
+
+
+/************************** podskazka end **************************/
+
+/***************************** zalu end *******************************/
+
+#content {
+    display: block;
+    width: 960px;
+    margin: 410px 0 0 0px; 
+    height: auto;
+    float: left;
+}
+
+#content-block {
+    display: block;
+    margin: 0px;
+    width: 710px;
+    float: left;
+    height: auto;
+}
+
+
+/***************************** content start *******************************/
+
+
+#content-block-info{
+    display: block;
+    margin: 0px 0px 20px 0px;
+    width: 710px;
+    float: left;
+    height: 100%;
+}
+
+#cont_block{
+    display: block;
+    width: 220px;
+    height: 215px;
+    border-top: 1px dashed #313131;
+    border-bottom: 1px dashed #313131;
+    float: left;
+    margin: 10px 7px 0 7px;
+}
+
+
+
+#cont_title{
+    display: block;
+    background: url(/wp-content/themes/gump/img/cont_title.png) no-repeat bottom;
+    color: #ffdc15;
+    height: 25px;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 0px;
+    float: left;
+}
+
+#cont_block_title{
+    width: 220px;
+    text-align: center;
+    font-weight: bold;
+    padding: 12px 0 8px 0;
+    font-size: 17px;
+}
+
+#cont_block_title a{
+    color: #fff;
+    text-decoration:none;
+}
+
+#cont_block_title a:hover{
+    color: #59ebe5;
+}
+
+#cont_block_img{
+    width: 210px;
+    height: 112px;
+    padding: 7px;
+    background: url(/wp-content/themes/gump/img/cont_img_bg.png) no-repeat;
+}
+
+#cont_block_img img{
+    width: 208px;
+    height: 140px;
+    opacity:0.8;
+    -moz-opacity:0.8;
+    filter: alpha(opacity=80) black;
+    -khtml-opacity: 0.8;
+}
+
+#cont_block_img img:hover{
+    width: 208px;
+    height: 140px;
+    opacity:1;
+    -moz-opacity:1;
+    filter: alpha(opacity=100) black;
+    -khtml-opacity: 1;
+    
+}
+
+
+#cont_block_btn{
+margin-top: 0px;
+}
+
+#cont_block_btn #b_1 a{
+    
+    position: absolute;
+    display: block;
+    width: 104px;
+    height: 33px;
+    background: url(/wp-content/themes/gump/img/cont_btn_1.png);
+    text-indent: -9999em;
+}
+
+#cont_block_btn #b_2 a{
+    position: absolute;
+    display: block;
+    width: 104px;
+    height: 33px;
+    background: url(/wp-content/themes/gump/img/cont_btn_2.png);
+    text-indent: -9999em;
+    margin: 0 0 0 117px;
+}
+#cont_block_btn #b_1 a:hover{
+    position: absolute;
+    display: block;
+    width: 104px;
+    height: 41px;
+    text-indent: -9999em;
+    margin-top: -3px;
+    background: url(/wp-content/themes/gump/img/cont_btn_1.png) no-repeat 0px -40px;
+}
+
+#cont_block_btn #b_2 a:hover{
+    position: absolute;
+    display: block;
+    width: 104px;
+    height: 41px;
+    text-indent: -9999em;
+    margin-top: -3px;
+    background: url(/wp-content/themes/gump/img/cont_btn_2.png) no-repeat 0px -40px;
+}
+
+
+
+
+
+
+
+
+/***********************/
+
+
+
+
+
+
+
+#cont_block_btn_t{
+margin-top: 25px;
+}
+
+#cont_block_btn_t #b_1 a{
+    
+    position: absolute;
+    display: block;
+    width: 104px;
+    height: 33px;
+    background: url(/wp-content/themes/gump/img/cont_btn_1.png);
+    text-indent: -9999em;
+}
+
+#cont_block_btn_t #b_2 a{
+    position: absolute;
+    display: block;
+    width: 104px;
+    height: 33px;
+    background: url(/wp-content/themes/gump/img/cont_btn_2.png);
+    text-indent: -9999em;
+    margin: 0 0 0 117px;
+}
+#cont_block_btn_t #b_1 a:hover{
+    position: absolute;
+    display: block;
+    width: 104px;
+    height: 41px;
+    text-indent: -9999em;
+    margin-top: -3px;
+    background: url(/wp-content/themes/gump/img/cont_btn_1.png) no-repeat 0px -40px;
+}
+
+#cont_block_btn_t #b_2 a:hover{
+    position: absolute;
+    display: block;
+    width: 104px;
+    height: 41px;
+    text-indent: -9999em;
+    margin-top: -3px;
+    background: url(/wp-content/themes/gump/img/cont_btn_2.png) no-repeat 0px -40px;
+}
+
+
+
+
+
+
+#cont_block_news_post_more_c22 {
+    float: right;
+    bottom: 0px;  
+    margin: 0px 0px 15px 0;
+    color: #f4d315;
+    font-size: 12px;
+   
+}
+
+
+
+#cont_block_btn_s{
+position: absolute;
+right: 225px;
+bottom: 35px;
+}
+
+#cont_block_btn_s #b_1 a{
+    
+    position: absolute;
+    display: block;
+    width: 104px;
+    height: 33px;
+    background: url(/wp-content/themes/gump/img/cont_btn_1.png);
+    text-indent: -9999em;
+}
+
+#cont_block_btn_s #b_2 a{
+    position: absolute;
+    display: block;
+    width: 104px;
+    height: 33px;
+    background: url(/wp-content/themes/gump/img/cont_btn_2.png);
+    text-indent: -9999em;
+    margin: 0 0 0 117px;
+}
+#cont_block_btn_s #b_1 a:hover{
+    position: absolute;
+    display: block;
+    width: 104px;
+    height: 41px;
+    text-indent: -9999em;
+    margin-top: -3px;
+    background: url(/wp-content/themes/gump/img/cont_btn_1.png) no-repeat 0px -40px;
+}
+
+#cont_block_btn_s #b_2 a:hover{
+    position: absolute;
+    display: block;
+    width: 104px;
+    height: 41px;
+    text-indent: -9999em;
+    margin-top: -3px;
+    background: url(/wp-content/themes/gump/img/cont_btn_2.png) no-repeat 0px -40px;
+}
+
+
+
+/***************************** хлебные крошки start *******************************/
+
+#cont_xleb_kroski{
+    width: 700px;
+    height: 30px;
+    float: left;
+    padding-top: 15px;
+    font-size: 13px;
+    color: #fff;
+}
+#cont_xleb_kroski a{
+    color: #fff;
+    float: left; 
+    margin: 0 0px;
+    
+}
+#cont_xleb_kroski span{
+    color: #fff; 
+    float: left;
+    margin: 0 10px;
+    font-size: 12px;
+}
+#cont_xleb_kroski a:hover{
+    color: #59ebe5;
+}
+
+
+
+/***************************** хлебные крошки end *******************************/
+
+/***************************** переключатель страниц start *******************************/
+
+#cont_block_navi{
+    display: block;
+    width: 700px;
+    text-align: center;
+    margin: 10px 0;
+    float: left;
+}
+
+
+#cont_block_navi .swchItem {
+    text-decoration:none;
+    -moz-border-radius:3px;  
+  -webkit-border-radius:3px;
+  border-radius:3px;  
+    padding:7px 10px;
+  font-weight:normal;  
+  color:#fff;  
+  text-shadow:0px 1px #000;  
+  box-shadow:0px 1px #2c2c2c;  
+  -webkit-box-shadow:0px 0px #2c2c2c;  
+  -moz-box-shadow:0px 1px #2c2c2c;  
+  border:1px solid #000000;  
+  background:#021319;  
+  background:-moz-linear-gradient(top,#041c23 1px,#133944 1px,#021319);  
+  background:-webkit-gradient(linear,0 0,0 100%,color-stop(0.02,#041c23),color-stop(0.02,#133944),color-stop(2,#021319));
+  margin-left:0px;
+}  
+
+
+
+
+
+
+#cont_block_navi .swchItemB {
+    text-decoration:none;
+    -moz-border-radius:3px;  
+  -webkit-border-radius:3px;
+  border-radius:3px;  
+    padding:7px 10px;
+  font-weight:normal;  
+  color:#fff;  
+  text-shadow:0px 1px #000;  
+  box-shadow:0px 1px #2c2c2c;  
+  -webkit-box-shadow:0px 0px #2c2c2c;  
+  -moz-box-shadow:0px 1px #2c2c2c;  
+  border:1px solid #000000;  
+  background:#021319;  
+  background:-moz-linear-gradient(top,#041c23 1px,#133944 1px,#021319);  
+  background:-webkit-gradient(linear,0 0,0 100%,color-stop(0.02,#041c23),color-stop(0.02,#133944),color-stop(2,#021319));
+  margin-left:0px;
+} 
+
+#cont_block_navi .swchItemB:hover {
+    text-decoration:none; 
+    color:#ffc300; 
+    text-shadow:0px 1px #000;   
+}
+
+#cont_block_navi .swchItemA{ 
+  -moz-border-radius:3px;  
+  -webkit-border-radius:3px;  
+  border-radius:3px; 
+  padding:5px 9px;  
+  margin-left:1px;  
+  text-decoration:none; 
+
+}  
+#cont_block_navi .swchItemA { 
+
+  font-weight:normal;  
+  color:#fff;  
+  text-shadow:0px 1px #000;  
+  box-shadow:0px 1px #2c2c2c;  
+  -webkit-box-shadow:0px 0px #2c2c2c;  
+  -moz-box-shadow:0px 1px #2c2c2c;  
+  border:1px solid #3390CA;  
+  background:#007d87;  
+  background:-moz-linear-gradient(top,#B4F6FF 1px,#00d2d6 1px,#007d87);  
+  background:-webkit-gradient(linear,0 0,0 100%,color-stop(0.02,#B4F6FF),color-stop(0.02,#00d2d6),color-stop(2,#007d87));  
+}
+
+#cont_block_navi .swchItem:hover { 
+
+  font-weight:normal;  
+  color:#fff;  
+  text-shadow:0px 1px #000;  
+  box-shadow:0px 1px #2c2c2c;  
+  -webkit-box-shadow:0px 0px #2c2c2c;  
+  -moz-box-shadow:0px 1px #2c2c2c;  
+  border:1px solid #3390CA;  
+  background:#007d87;  
+  padding:5px 9px;
+  margin: 0px 1px 0px 1px;
+  background:-moz-linear-gradient(top,#B4F6FF 1px,#00d2d6 1px,#007d87);  
+  background:-webkit-gradient(linear,0 0,0 100%,color-stop(0.02,#B4F6FF),color-stop(0.02,#00d2d6),color-stop(2,#007d87));  
+}
+/***************************** переключатель страниц end *******************************/
+
+
+/***************************** доп новости start *******************************/
+
+#cont_block_news{
+    float: left;
+    margin: 0px 0 0 0px;
+}
+#cont_block_news_post{
+    width: 690px;
+    margin: 15px 0 15px 5px;
+}
+#cont_block_news_post_title {
+    color: #ffdc15;
+    font-weight: bold;
+    
+}
+
+#cont_block_news_post_title h2{
+    color: #ffdc15;
+    font-size: 20px;
+    
+}
+
+#cont_block_news_post_title a{
+    color: #ffdc15;
+    text-decoration: none;
+    font-weight: bold;
+}
+#cont_block_news_post_title a:hover{
+    color: #59ebe5;
+    text-decoration: none;
+}
+.cont_block_news_post_cont{
+    margin: 10px 0 0 0;
+    padding: 5px;
+    width: 680px;
+   
+    border-radius: 5px;
+    -webkit-border-radius: 5px; /* Chrome до версии 4.0, Safari до версии 5.0, iOS */
+    -moz-border-radius: 5px;    /* Firefox до версии 4.0 */
+    background: #04222b;
+
+}
+
+.cont_block_news_post_cont p{
+    margin: 16px 14px 9px 9px;
+}
+
+.cont_block_news_post_cont img{
+    margin: 10px 10px;
+    float: left;
+}
+
+.cont_block_news_post_cont_text{
+    border: 1px dashed #313131; 
+    margin-left: 133px;   
+    color: #adadad;
+    font-size: 14px;
+    
+    min-height: 116px;
+    padding: 5px;
+
+}
+
+
+.cont_block_news_post_cont_t{
+    margin: 10px 0 0 0;
+    line-height: 18px;
+    padding: 5px;
+    width: 680px;
+   
+    border-radius: 5px;
+    -webkit-border-radius: 5px; /* Chrome до версии 4.0, Safari до версии 5.0, iOS */
+    -moz-border-radius: 5px;    /* Firefox до версии 4.0 */
+    background: #04222b;
+
+}
+.cont_block_news_post_cont_text_t{
+    border: 1px dashed #313131; 
+    margin-left: 0px;   
+    color: #adadad;
+    font-size: 14px;
+    
+    min-height: 116px;
+    padding: 5px;
+
+}
+
+
+.cont_block_news_post_cont_text_t img{
+    float: left;  
+    margin: 0 10px 5px 0;
+
+}
+
+.cont_block_news_post_cont_text_t p{  
+    margin: 0 0px 14px 0;
+
+}
+
+.cont_block_news_post_cont_text_t ul{  
+list-style-type: circle;
+margin: 0px;
+-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+-webkit-padding-start: 40px;
+list-style-position: outside;
+}
+
+}
+.cont_block_news_post_cont_text p{
+    margin: 0;
+}
+
+.cont_block_news_post_cont_text_big{
+    border: 1px dashed #313131; 
+    margin-left: 0px;   
+    color: #adadad;
+    font-size: 14px;
+    
+    min-height: 116px;
+    padding: 5px;
+
+}
+
+.cont_block_news_post_cont_text_big p{
+    margin: 0;
+}
+
+/***************************** доп новости end *******************************/
+
+
+/***************************** комменты start *******************************/
+
+
+
+/*******/
+
+
+
+
+
+.comment-form{
+    width: 680px;
+    max-height: 180px;
+    float: left;
+    -moz-border-radius:3px;  
+    -webkit-border-radius:3px;
+    border-radius:3px;  
+    background: #03181e;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+	position: relative;
+}
+
+.comment-form #left_b{
+    width: 227px;
+    float: left;
+}
+
+.comment-form #right_b{
+    width: 430px;
+    float: left;
+    padding-left: 10px;
+}
+
+.comment-form input{
+    width: 205px;
+    height: 10px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px; /* Chrome до версии 4.0, Safari до версии 5.0, iOS */
+    -moz-border-radius: 2px;    /* Firefox до версии 4.0 */
+    border: 1px solid #373737;  
+    background-color: #03181e;
+    color: #fff;
+    text-align: left;
+    float: left;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 10px;        
+}
+
+.comment-form textarea{
+    width: 420px;
+    height: 115px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px; /* Chrome до версии 4.0, Safari до версии 5.0, iOS */
+    -moz-border-radius: 2px;    /* Firefox до версии 4.0 */
+    border: 1px solid #373737;  
+    background-color: #03181e;
+    color: #fff;
+    text-align: left;
+    float: left;
+    padding: 10px;
+    margin-bottom: 10px; 
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 10px; 
+}
+
+.comment-form .submit { 
+    width: 104px;
+    height: 31px;
+    background: url(/wp-content/themes/gump/img/cont_btn_send_comm.png) no-repeat;
+    border: 0px;
+    cursor: pointer;
+    margin: 0px 0 0 10px;
+    float: right;
+    text-indent: -9999em;
+} 
+
+.comment-form .submit:hover { 
+    width: 104px;
+    height: 31px;
+    background: url(/wp-content/themes/gump/img/cont_btn_send_comm.png) no-repeat 0px -31px;
+    border: 0px;
+    cursor: pointer;
+    margin: 0px 0 0 10px;
+} 
+
+.comment-form #center_b{
+    color: #fff;
+    float: left;
+    font-size: 12px;
+}
+
+.comment-form #center_b input{
+    width: 15px;
+    float: left;
+    padding: 0 0;
+    border-radius: 1px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+}
+
+/**************/
+
+
+
+
+
+#con_comet_act{
+    width: 680px;
+    float: left;
+    padding: 10px;
+    
+}
+
+#con_comet_act .edit-link{
+    margin: 0px 0px 0px 10px;
+}
+
+#con_comet_act li{
+    list-style: none;
+}
+#con_comet_act p{
+    border-bottom: 1px dashed #313131;
+    margin-bottom: 0px;
+}
+
+#con_comet_act .fn{
+    width: 100%;
+    float: left;
+    color: #01d1d5;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 15px;
+    float: left;
+    font-style: normal;
+    margin-top: -2px;
+    height: 10px;                    
+    }
+
+.comment-meta div{
+    float: left;
+    
+                }
+ 
+.comment-meta-details a{
+    text-decoration: none;
+    font-size: 13px;    
+}    
+
+.comment-content p{
+    width: 680px;
+    float: left;
+    padding: 10px 10px 10px 0px;
+
+    color: #fff;
+    margin: 0px;
+    font-size: 13px;
+    
+}
+
+.children .fn{
+    width: 100%;
+    float: left;
+    color: #01d1d5;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 15px;
+    float: left;
+    font-style: normal;
+    margin-top: -2px;
+    height: 10px;   
+    padding-left: 30px;                 
+    }
+
+
+.children p{
+    width: 650px;
+    float: left;
+    padding: 10px 10px 10px 30px;
+
+    color: #fff;
+    margin: 0px;
+    font-size: 13px;
+}
+
+.children{
+    width: 660px;
+    float: left;
+    padding: 10px 10px 10px 0px;
+    
+    font-size: 13px;
+}
+
+#con_comet_name{
+    width: 100%;
+    float: left;
+    color: #01d1d5;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#con_comet_data{
+    height: 20px;
+    float: none;
+    color: #fff;
+    font-size: 12px;
+    padding: 0 0 0 10px;
+    font-weight: normal;
+}
+#con_comet_text{
+    width: 100%;
+    float: left;
+    color: #fff;
+    font-size: 13px;
+}
+
+
+
+/**************/
+/***************************** комменты end *******************************/
+
+
+/***************************** доп новости type 2 start *******************************/
+
+#cont_block_news_c{
+    float: left;
+    margin: 0px 0 0 0px;
+}
+#cont_block_news_post_c{
+    width: 690px;
+    margin: 15px 0 15px 8px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #313131;
+}
+
+#cont_block_news_post_title_c {
+    text-transform: uppercase;
+}
+#cont_block_news_post_title_c a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+#cont_block_news_post_title_c a:hover{
+    color: #59ebe5;
+    text-decoration: none;
+}
+#cont_block_news_post_cont_c{
+    margin: 10px 0 0 0;
+    padding: 5px;
+    width: 680px;
+    height: 140px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px; /* Chrome до версии 4.0, Safari до версии 5.0, iOS */
+    -moz-border-radius: 5px;    /* Firefox до версии 4.0 */
+    background: #04222b;
+    background: linear-gradient(to top, #010b0e, #111b1f);
+}
+
+#cont_block_news_post_cont_c img{
+    float: left;    
+    width: 208px;
+    height: 140px;
+}
+
+#cont_block_news_post_cont_text_c{
+    margin-left: 218px;   
+    color: #adadad;
+    font-size: 14px;
+
+    padding: 5px;
+    font-size: 12px;
+}
+
+#cont_block_news_post_more_c a{
+    float: right;
+    bottom: 10px;  
+    margin: 0 10px 10px 0;
+    color: #f4d315;
+    font-size: 13px;
+}
+#cont_block_news_post_more_c a:hover{
+    color: #59ebe5;
+}
+
+
+
+#cont_block_news_post_more_c2{
+    width: 220px;
+    float: right;  
+    margin: 0 10px 0px 0;
+    bottom: 10px;
+    position: relative;
+}
+
+#cont_block_news_post_cont_c2 p {
+
+-webkit-margin-before: 0em;
+-webkit-margin-after: 0em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+height: 60px;
+overflow: hidden;
+}
+/***************************** доп новости type 2 end *******************************/
+
+
+/***************************** доп новости type 3 start *******************************/
+
+#cont_block_news_c2{
+    float: left;
+    margin: 0px 0 0 0px;
+}
+#cont_block_news_post_c2{
+    width: 690px;
+    margin: 15px 0 15px 8px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #313131;
+    
+}
+#cont_block_news_post_title_c2{
+    text-transform: none;
+}
+
+#cont_block_news_post_title_c2 a{
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+}
+#cont_block_news_post_title_c2 a:hover{
+    color: #59ebe5;
+    text-decoration: none;
+}
+#cont_block_news_post_cont_c2{
+    margin: 10px 0 0 0;
+    padding: 5px;
+    width: 680px;
+    height: 140px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px; /* Chrome до версии 4.0, Safari до версии 5.0, iOS */
+    -moz-border-radius: 5px;    /* Firefox до версии 4.0 */
+    background: #04222b;
+    background: linear-gradient(to top, #111b1e, #010b0f);
+    position: relative;
+}
+
+#cont_block_news_post_cont_c2 img{
+    float: left;    
+    width: 208px;
+    height: 140px;
+    opacity:0.8;
+    -moz-opacity:0.8;
+    filter: alpha(opacity=80) black;
+    -khtml-opacity: 0.8;
+}
+
+#cont_block_news_post_cont_c2 img:hover{
+    float: left;    
+    width: 208px;
+    height: 140px;
+    opacity:1;
+    -moz-opacity:1;
+    filter: alpha(opacity=100) black;
+    -khtml-opacity: 1;
+
+}
+#cont_block_news_post_cont_text_c2{
+    margin-left: 218px;   
+    color: #adadad;
+
+    padding: 5px;
+    font-size: 14px;
+}
+
+#cont_block_news_post_more_c2 {
+    float: right;
+    bottom: 0px;  
+    margin: 0px 0px 15px 0;
+    color: #f4d315;
+    font-size: 12px;
+}
+
+
+/***************************** доп новости type 3 end *******************************/
+
+
+/***************************** флеш игра start *******************************/
+
+#cont_block_game{
+    float: left;
+    width: 700px;
+}
+
+
+
+.Vwidget{
+     margin: 15px 0;
+     padding: 0;
+     width: 140px;
+     float: left;
+}
+     
+a.up, a.down{
+     display: block;
+     width:140px;
+     height:31px;
+     margin: 0 auto;
+}
+     
+a.up{
+      margin-bottom: 6px;
+      background: url(/wp-content/themes/gump/img/cont_btn_up.png);
+}
+a.down {
+      margin-top: 6px;
+      background: url(/wp-content/themes/gump/img/cont_btn_down.png);
+}
+     
+.VjCarouselLite{
+     margin: 0;
+     padding: 0;
+}
+     
+.VjCarouselLite li{
+     /*overflow: hidden;*/
+     float: none;
+     display: block;
+     padding: 0;
+     text-align: center;
+}
+     
+.VjCarouselLite li div{
+     margin: 0 auto;
+     margin-top: 3px;
+     margin-bottom: 2px;
+     padding: 0px 0;
+    
+     height: 60px;
+     width: 140px;
+}
+    
+.VjCarouselLite li #im{
+     float: left;
+     
+     height: 60px;
+     width: 60px;
+}
+    
+.VjCarouselLite li .text{
+     float: right;
+     border: 1px solid #1b1b1b;
+     height: 59px;
+     width: 60px;
+     /*background: #061317;*/
+     border-radius: 4px;
+    -webkit-border-radius: 4px; /* Chrome до версии 4.0, Safari до версии 5.0, iOS */
+    -moz-border-radius: 4px;    /* Firefox до версии 4.0 */
+    display: flex;
+    text-align: center;
+    
+
+    padding: 0 5px;
+    z-index: 9;
+}
+
+
+
+
+.VjCarouselLite li .text a{
+    width: 60px;
+    color: #fff;
+    text-decoration: none;
+    margin:auto;  
+    font-size: 12px;
+
+    z-index: 9999;
+}
+
+.VjCarouselLite li .text a:hover{
+    color: #ffdc15;
+    text-decoration: none;
+    margin:auto;  
+    font-size: 12px;
+}
+
+@-moz-document url-prefix(){
+    
+.VjCarouselLite li .text{
+     float: right;
+     border: 1px solid #1b1b1b;
+     height: 59px;
+     width: 60px;
+     /*background: #061317;*/
+     border-radius: 4px;
+    -webkit-border-radius: 4px; /* Chrome до версии 4.0, Safari до версии 5.0, iOS */
+    -moz-border-radius: 4px;    /* Firefox до версии 4.0 */
+    display: flex;
+    text-align: center;
+    
+    white-space: pre-wrap;
+    word-wrap: break-word;      /* IE 5.5-7 */
+    white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
+    white-space: pre-wrap;      /* current browsers */
+    padding: 0 5px;
+    z-index: 9;
+}
+
+
+
+}
+
+
+@-moz-document url-prefix(){
+    
+.VjCarouselLite li .text a{
+    width: 60px;
+    color: #fff;
+    text-decoration: none;
+    margin:auto;  
+    font-size: 12px;
+    white-space: pre-wrap;
+    word-wrap: break-word;      /* IE 5.5-7 */
+    white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
+    white-space: pre-wrap;      /* current browsers */
+    z-index: 9999;
+}
+
+
+
+}
+
+
+
+.VjCarouselLite li:hover .text{
+    background: #042833;
+}
+
+#cont_block_game_frame{
+    margin: 15px 0 10px 0;
+    padding: 10px;
+    width: 520px;
+    height: 400px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px; /* Chrome до версии 4.0, Safari до версии 5.0, iOS */
+    -moz-border-radius: 5px;    /* Firefox до версии 4.0 */
+    background: #04222b;
+    background: linear-gradient(to top, #111b1e, #010b0f);
+    float: right;
+}
+
+#cont_block_game_btn a{
+    width: 700px;
+    height: 51px;
+    margin: 17px 0 12px 0;
+    float: left;
+    background: url(/wp-content/themes/gump/img/cont_btn_game.png);
+    text-indent: -9999em;
+}
+
+#cont_block_game_btn a:hover{
+    margin: 0 0;
+    width: 700px;
+    height: 80px;
+    background: url(/wp-content/themes/gump/img/cont_btn_game.png) no-repeat 0px -51px;
+    text-indent: -9999em;
+}
+
+
+
+/***************************** флеш игра end *******************************/
+
+
+#content-block-info2{
+    display: block;
+    margin: 0px 0px 10px 0px;
+    width: 710px;
+    float: left;
+    height: 100%;
+}
+
+/***************************** рейтинг казино start *******************************/
+
+#cont_rate{
+    width: 700px;
+    float: left;
+    margin: 0 0 10px 7px;
+}
+
+/*********/
+
+#cont_rate_kaz_title{
+    width: 690px;
+    float: left;
+    text-align: center;
+    color: #fff;
+    margin: 10px 0 15px;
+}
+#cont_rate_kaz_name_title{
+    width: 135px;
+    float: left;
+    text-align: center;
+}
+#cont_rate_kaz_rate_title{ 
+    width: 170px;
+    float: left;
+    text-align: center;
+}
+#cont_rate_kaz_soft_title{
+    width: 138px;
+    float: left;
+    text-align: center;
+}
+#cont_rate_kaz_obz_title{
+    width: 125px;
+    float: left;
+    text-align: center;
+}
+#cont_rate_kaz_site_title{
+    width: 120px;
+    float: left;
+    text-align: center;
+}
+
+/************/
+
+#cont_rate_kaz{
+    width: 670px;
+    float: left;
+    border: 1px solid #1b1b1b;
+    background: #061317;
+    border-radius: 5px;
+    -webkit-border-radius: 5px; /* Chrome до версии 4.0, Safari до версии 5.0, iOS */
+    -moz-border-radius: 5px;    /* Firefox до версии 4.0 */
+    padding: 10px;
+    text-align: center;
+}
+#cont_rate_kaz_name{
+    width: 120px;
+    float: left;
+}
+#cont_rate_kaz_rate{
+    width: 174px;
+    float: left;
+    padding: 16px 0 12px 0;
+    color:#fff;
+}
+
+#cont_rate_kaz_rate span{
+    display: none;
+}
+
+#cont_rate_kaz_soft{
+    width: 140px;
+    float: left;
+    padding: 15px 0 10px 0;
+}
+#cont_rate_kaz_obz{
+    width: 101px;
+    float: left;
+    padding: 14px 10px 14px 15px;
+}
+#cont_rate_kaz_obz a{
+    width: 104px;
+    height: 31px;
+    float: left;
+    background: url(/wp-content/themes/gump/img/cont_btn_rate.png) no-repeat 0px 0px;
+    text-indent: -9999em;
+}
+#cont_rate_kaz_obz a:hover{
+    width: 104px;
+    height: 31px;
+    float: left;
+    background: url(/wp-content/themes/gump/img/cont_btn_rate.png) no-repeat 0px -31px;
+    text-indent: -9999em;
+}
+#cont_rate_kaz_site{
+    width: 103px;
+    float: left;
+    padding: 14px 0px 14px 5px;
+}
+#cont_rate_kaz_site a{
+    width: 104px;
+    height: 31px;
+    float: left;
+    background: url(/wp-content/themes/gump/img/cont_btn_rate.png) no-repeat -104px 0px;
+    text-indent: -9999em;
+}
+
+#cont_rate_kaz_site a:hover{
+    width: 104px;
+    height: 31px;
+    float: left;
+    background: url(/wp-content/themes/gump/img/cont_btn_rate.png) no-repeat -104px -31px;
+    text-indent: -9999em;
+}
+/***************************** рейтинг казино end *******************************/
+
+/***************************** Инфо по казино start *******************************/
+
+#cont_info_kaz{
+    width: 690px;
+    float: left;
+    border-top: 1px dashed #313131;
+    border-bottom: 1px dashed #313131;
+    margin: 10px 0 0 7px;
+}
+
+#cont_info_kaz_block_1{
+    width: 235px;
+    height: 130px;
+    float: left;
+    font-size: 13px;
+    padding-top: 30px;
+}
+#cont_info_kaz_block{
+    width: 220px;
+    height: 130px;
+    float: left;
+    padding: 15px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#cont_info_kaz_block #title{
+    width: 220px;
+    height: 30px;
+    float: left;
+    color: #fff;
+    font-weight: bold;
+}
+
+#cont_info_kaz_block #img{
+    width: 220px;
+    height: 70px;
+    float: left;
+}
+
+#cont_info_kaz_block #rate{
+    width: 220px;
+    height: 20px;
+    float: left;
+    font-size: 14px;
+    color: #fff;
+}
+
+#cont_info_kaz_block_1 #c_b_i{
+    width: 70px;
+    height: 35px;
+    float: left;
+    color: #ffdc15;
+    line-height: 35px;
+}
+
+#cont_info_kaz_block_1 #c_b_o{
+    width: 140px;
+    height: 35px;
+    float: left;
+    color: #fff;
+    line-height: 35px;
+}
+
+#cont_rate_kaz_site{
+    width: 103px;
+    float: left;
+    padding: 14px 0px 14px 5px;
+}
+
+
+#cont_game_btn a{
+    width: 700px;
+    height: 51px;
+    margin: 22px 0 7px 0;
+    float: left;
+    background: url(/wp-content/themes/gump/img/cont_btn_game_kaz.png);
+    text-indent: -9999em;
+}
+
+#cont_game_btn a:hover{
+    margin: 0 0;
+    width: 700px;
+    height: 80px;
+    background: url(/wp-content/themes/gump/img/cont_btn_game_kaz.png) no-repeat 0px -51px;
+    text-indent: -9999em;
+}
+
+
+#cont_block_news_post_cont_text_2{
+    border: 1px dashed #313131; 
+    margin-left: 0px;   
+    color: #adadad;
+    font-size: 15px;
+    min-height: 116px;
+    padding: 5px;
+}
+.cont_block_news_post_cont_text_2{
+    border: 1px dashed #313131; 
+    margin-left: 0px;   
+    color: #adadad;
+    font-size: 15px;
+    min-height: 116px;
+    padding: 5px;
+}
+
+
+
+/***************************** Инфо по казино end *******************************/
+
+/***************************** статья целиком start *******************************/
+
+#cont_block_news_post_n{
+    float: left;
+    margin: 0px 0 0 0px;
+    width: 690px;
+    height: 100%;
+}
+#cont_block_news_post_post{
+    width: 690px;
+    margin: 15px 0 0px 8px;
+    padding-bottom: 15px;
+    float: left;
+}
+#cont_block_news_post_title_post{
+    color: #fff;
+    font-weight: bold;
+    float: left;
+    width: 690px;
+    text-transform: uppercase;
+}
+
+#cont_block_news_post_cont_post{
+    float: left;
+    margin: 10px 0 0 0;
+    padding: 5px;
+    width: 680px;
+    height: 100%;    
+    border-radius: 5px;
+    -webkit-border-radius: 5px; /* Chrome до версии 4.0, Safari до версии 5.0, iOS */
+    -moz-border-radius: 5px;    /* Firefox до версии 4.0 */
+    background: #04222b;
+    background: linear-gradient(to top, #010b0e, #111b1f);
+}
+
+#cont_block_news_post_cont_post p{
+    margin: 0px;
+}
+
+#cont_block_news_post_cont_text_post{
+    margin-left: 0px;   
+    color: #adadad;
+    padding: 5px;
+    font-size: 12px;
+    float: left;
+}
+#cont_block_news_post_cont_post_imgs{
+    float: left;    
+    width: 208px;
+    height: 140px;
+    margin: 0px 10px 10px 0px;
+}
+
+
+/***************************** статья целиком end *******************************/
+
+/***************************** похожие материалы start *******************************/
+
+.content-block-poxozie{
+    display: block;
+    margin: 0px 0px 20px 0px;
+    width: 710px;
+    float: left;
+    height: 100%;
+    min-height: 300px;
+}
+
+.content-block-poxozie p{
+    margin: 0px;
+}
+
+#cont_block_pn{
+    display: block;
+    width: 220px;
+    height: 215px;
+    float: left;
+    margin: 0px 7px 0 7px;
+}
+
+#cont_block_title_pn{
+    width: 218px;
+    text-align: left;
+    font-weight: bold;
+    padding: 12px 0 8px 0;
+    text-transform: uppercase;
+}
+
+#cont_block_title_pn a{
+    color: #fff;
+    text-decoration:none;
+}
+
+#cont_block_title_pn a:hover{
+    color: #59ebe5;
+}
+
+#cont_block_img_pn{
+    width: 208px;
+    padding: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px; /* Chrome до версии 4.0, Safari до версии 5.0, iOS */
+    -moz-border-radius: 5px;    /* Firefox до версии 4.0 */
+    background: #04222b;
+    background: linear-gradient(to top, #132e35, #010b0e);
+    float: left;
+}
+
+#cont_block_img_pn img{
+    width: 208px;
+    height: 140px;
+    float: left;
+}
+
+#cont_block_text_pn{
+    width: 195px;
+    padding: 10px 10px 0px 7px;
+    color: #adadad;
+    float: left;
+    font-size: 12px;
+}
+
+#cont_block_btn_pn{
+margin-top: 10px;
+}
+
+#cont_block_link_pn a{
+    float: right;
+    bottom: 0px;  
+    margin: 0 5px 5px 0;
+    color: #f4d315;
+    font-size: 12px;
+}
+
+#cont_block_link_pn a:hover{
+    color: #59ebe5;
+}
+
+/***************************** похожие материалы end *******************************/
+
+/***************************** content end *******************************/
+
+/***************************** sitebar start *******************************/
+
+#sitebar{
+    width: 240px;
+    display: block;
+    float: right;
+    padding: 10px 0;
+}
+
+#sitebar_soc{
+    height: 30px;
+    margin: 0px 0px 15px -6px;
+}
+
+#sitebar_soc #lj, #fb, #twit, #vk, #mail, #gg{
+    margin: 0 5px;
+    float: left;
+    display: block;
+    text-indent: -9999em;
+}
+
+#sitebar_soc #lj{
+    width: 28px;
+    height: 28px;
+    background: url(/wp-content/themes/gump/img/social.png) no-repeat;
+}
+#sitebar_soc #fb{
+    width: 28px;
+    height: 28px;
+    background: url(/wp-content/themes/gump/img/social.png) no-repeat -28px 0;   
+}
+#sitebar_soc #twit{
+    width: 28px;
+    height: 28px;
+    background: url(/wp-content/themes/gump/img/social.png) no-repeat -57px 0;  
+}
+#sitebar_soc #vk{
+    width: 28px;
+    height: 28px;
+    background: url(/wp-content/themes/gump/img/social.png) no-repeat -85px 0;  
+}
+#sitebar_soc #mail{
+    width: 28px;
+    height: 28px;
+    background: url(/wp-content/themes/gump/img/social.png) no-repeat -113px 0;   
+}
+#sitebar_soc #gg{
+    width: 28px;
+    height: 28px;
+    background: url(/wp-content/themes/gump/img/social.png) no-repeat -142px 0; 
+}
+
+#sitebar_soc #lj, #fb, #twit, #vk, #mail, #gg{
+    display: block;
+    text-indent: -9999em;
+    float: left;
+}
+
+#sitebar_soc #lj:hover{
+    width: 28px;
+    height: 38px;
+    background: url(/wp-content/themes/gump/img/social.png) no-repeat 0 -29px;
+}
+
+#sitebar_soc #fb:hover{
+    width: 28px;
+    height: 28px;
+    background: url(/wp-content/themes/gump/img/social.png) no-repeat -28px -29px;   
+}
+#sitebar_soc #twit:hover{
+    width: 28px;
+    height: 28px;
+    background: url(/wp-content/themes/gump/img/social.png) no-repeat -57px -29px;  
+}
+#sitebar_soc #vk:hover{
+    width: 28px;
+    height: 28px;
+    background: url(/wp-content/themes/gump/img/social.png) no-repeat -85px -29px;  
+}
+#sitebar_soc #mail:hover{
+    width: 28px;
+    height: 28px;
+    background: url(/wp-content/themes/gump/img/social.png) no-repeat -113px -29px;   
+}
+#sitebar_soc #gg:hover{
+    width: 28px;
+    height: 28px;
+    background: url(/wp-content/themes/gump/img/social.png) no-repeat -142px -29px; 
+}
+
+/***************** sitebar_game start *************************/
+
+#sitebar_game{
+    width: 220px;
+    height: 69px;
+    background: url(/wp-content/themes/gump/img/sitebar_game_bg.png) no-repeat; 
+    margin-bottom: 15px;    
+}
+#sitebar_game:hover{
+    width: 220px;
+    height: 69px;
+    background: url(/wp-content/themes/gump/img/sitebar_game_bg_activ.png) no-repeat; 
+}
+
+#sitebar_game_title{
+    display: block;
+    background: url(/wp-content/themes/gump/img/cont_title.png) no-repeat bottom;
+    color: #ffdc15;
+    width: 220px;
+    height: 25px;
+    text-align: center;
+    padding: 10px 10px 10px 0px;
+    margin-bottom: 15px;
+}
+
+#sitebar_game_img{
+    display: block;
+    float: left;
+    margin: 5px 5px 5px 5px;
+    width: 55px;
+}
+.sitebar_game_name {
+    
+    width: 154px;
+    height: 69px;
+    display: flex;
+    text-align: center;
+    float: right;
+    line-height: 69px;
+    
+}
+
+
+
+
+
+.sitebar_game_name a{
+    color: #fff;
+    text-decoration: none;
+    margin:auto;  
+       
+}
+
+
+
+   html*.sitebar_game_name a{
+    color: #000;
+    margin-top: 50px;  
+}
+
+
+/***************** sitebar_game end *************************/
+
+/***************** sitebar_games_search start *************************/
+
+#sitebar_search{
+    width: 210px;
+    height: 30px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px; /* Chrome до версии 4.0, Safari до версии 5.0, iOS */
+    -moz-border-radius: 3px;    /* Firefox до версии 4.0 */
+    background-color: #04232c;
+    padding: 10px 0px 10px 10px;
+}
+
+#sitebar_search input { 
+    width: 158px;
+    height: 30px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px; /* Chrome до версии 4.0, Safari до версии 5.0, iOS */
+    -moz-border-radius: 2px;    /* Firefox до версии 4.0 */
+    border: 1px solid #373737;  
+    background-color: #04232c;
+    color: #fff;
+    text-align: center;
+    float: left;
+} 
+
+#sitebar_search .submit { 
+    width: 31px;
+    height: 31px;
+    background: url(/wp-content/themes/gump/img/sitebar_search_btn.png) no-repeat;
+    border: 0px;
+    cursor: pointer;
+    margin: 0px 0 0 10px;
+} 
+
+
+/***************** sitebar_games_search end *************************/
+
+/***************************** sitebar end *******************************/
+
+
+
+#footer {
+    display: block;
+    width: 970px;
+    height: 250px;
+    bottom: 0px; 
+    float: left;
+    color: #fff;
+}
+
+/***************************** footer start *******************************/
+
+#footer_title{
+    width: 940px;
+    text-align: center;
+    height: 40px;
+}
+#footer_title a{
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+#footer_title li{
+    float: left;
+}
+
+#footer_title .cs_1{
+    float: left;
+    border-right: 2px solid #ebebeb;
+}
+#footer_title a:hover{
+    color: #59ebe5;
+}
+
+#footer_title ul{
+    width: 600px;
+    margin: 0 auto;
+}
+#footer_copyr{
+    width: 940px;
+    text-align: center;
+    font-size: 12px;
+    float: left;
+}
+
+#footer_bottom{
+    display: block;
+    font-size: 12px;
+    width: 900px;
+    padding: 70px 0 0px 130px;
+}
+
+#footer_bottom #footer_bottom_title{
+    color: #ffdc15;
+    float: none;
+    margin-bottom: 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+#footer_bottom_left{
+    width: 200px;
+    float: left;
+    padding: 0 15px;
+    background: url(/wp-content/themes/gump/img/fotter_bg_b.png) no-repeat right;
+}
+#footer_bottom_center{
+    width: 200px;
+    float: left;
+    padding: 0 15px;
+    background: url(/wp-content/themes/gump/img/fotter_bg_b.png) no-repeat right;
+}
+#footer_bottom a{
+    text-decoration: none;
+}
+#footer_bottom_right{
+    width: 200px;
+    padding: 0 15px;
+    float: left;
+}
+/***************************** footer end *******************************/
+
+
+
+ul {
+
+list-style-type: none;
+margin: 0px;
+-webkit-margin-before: 0em;
+-webkit-margin-after: 0em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+-webkit-padding-start: 0px;
+list-style-position: outside;
+
+}
+
+ 
+.niz_b li{
+    margin-bottom: 5px;
+}
+
+.edit-link{
+    float: right;
+    margin-top: 20px;
+    
+}
+.niz_b{
+    float: left;
+    width: 690px;
+    padding: 0px 15px 15px 15px;
+    
+}
+
+.niz_b #cont_block_news_post_title{
+    margin: 15px 15px 15px -15px;
+}
+
+.niz_b li {
+    list-style-type: square; /* Квадратные маркеры */
+    color: #fff;
+    float: left;
+    width: 200px;
+    margin-left: 25px;
+}
+
+
+.sk_ser{
+    width: 600px;
+    float: left;
+}
+
+@-moz-document url-prefix(){
+    
+ul { margin-left: -40px;}
+
+
+
+}
+
+@-moz-document url-prefix(){
+    
+
+
+#cont_block_btn{
+margin-top: -35px;
+}
+
+}
+
+@-moz-document url-prefix(){
+    
+
+
+#cont_block_btn_t{
+margin-top: 0px;
+}
+
+}
+
+
+@-moz-document url-prefix(){
+#cont_block_btn #b_2{
+    margin-top: 15px;
+}
+}
+
+
+h1{
+    font-size: 23px;
+    color: #ffdc15; 
+    font-weight: normal;
+}
+
+h1 a{
+    font-size: 20px;
+    color: #ffdc15;
+    text-decoration: none; 
+    font-weight: normal;
+}
+
+
+blockquote {
+    background: url(/wp-content/themes/gump/img/cw.png) no-repeat top left,
+                url(/wp-content/themes/gump/img/cw2.png) no-repeat bottom right; 
+display: block;
+padding: 0 20px;
+-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 20px;
+-webkit-margin-end: 20px;
+}
+
+#cont_block_news_post_cont_text_post ul li:before {
+    color: #ffdc15; /* Цвет маркера */
+    content: "• "; /* Сам маркер */
+    padding-right: 5px; /* Расстояние от маркера до текста */
+    padding-left: 5px;
+   }
+   
+
+#cont_block_news_post_cont_text_post ul li{
+    padding-bottom: 2px;
+}
+   
+   
+#cont_block_news_post_cont_text_post ul{
+    list-style-type: none;
+margin: 0px;
+-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 20px;
+-webkit-margin-end: 0px;
+-webkit-padding-start: 0px;
+list-style-position: outside;
+}
+
+
+
+#cont_block_news_post_cont_text_post ol {
+    counter-reset:li; /* Инициализируем счетчик */
+    padding:0; /* Удаляем  установленное по умолчанию левое поле*/
+    list-style:none; /* Отменяем нумерацию установленную по умолчанию */
+    padding-left: 20px;
+  }
+ #cont_block_news_post_cont_text_post  ol li {
+      position:relative; /* Создаем контекст для позиционирования элементов */
+      margin:-4px 0 6px 13px; /* Даем каждому элементу списка отступ слева, что бы освободить пространство для нумерации */
+      padding:0px 8px;
+      
+      }
+  #cont_block_news_post_cont_text_post ol li:before {
+      content:counter(li); /* В качестве данных используем счетчик */
+      counter-increment:li; /* Увеличиваем значение счетчика на 1 */
+      /* Позиционируем и оформляем цифры */
+      position:absolute;
+      top:0px;
+      left:-0.9em;
+      width:1em;
+      padding:0px 0;
+      
+      color:#ffdc15;
+
+
+      font-family:"Helvetica Neue", Arial, sans-serif;
+      text-align:center;
+      }
+	  
+
+
+
+
+
+
+
+
+
+/****************/
+
+
+
+/* форма комментариев */
+
+
+.comment-respond{
+    float: left;
+}
+
+.comment-respond form .comment-form-subscriptions {
+position: absolute;
+padding: 0px!important;
+font-size: 10px;
+text-transform: uppercase;
+border-bottom: 0px!important;
+top: 95px;
+/*bottom: 52px!important;*/
+}
+
+.comment-respond form .comment-form-subscriptions input{
+    width: 10px!important;
+    margin: 0 10px 0 0!important;
+}
+
+.comment-respond form .form-submit{
+    position: absolute;
+    bottom: 0px;
+    left: 126px;
+    margin-bottom: 18px!important;
+}
+
+.comment-reply-title{
+    float: left;
+    width: 100%;
+}
+
+.comment-respond form p {
+    margin-top: 0px;
+padding: 0px!important;
+border-bottom: 0px!important;
+}
+
+.comment-bypostauthor{
+    display: none;
+}

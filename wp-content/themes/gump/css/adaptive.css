@@ -1,0 +1,207 @@
+/*** D.iK.iJ - http://dikij.com/wm/adaptaciya-saytov.php ***/
+
+@media screen and (max-width: 1126px) {
+#footer_bottom {width: 100%; box-sizing: border-box;}
+}
+@media screen and (max-width: 970px) {
+img {max-width: 100% !important; height: auto !important; box-sizing: border-box;}
+iframe, textarea, input, button, submit, select, video, object, embed {max-width: 100% !important; box-sizing: border-box;}
+table, span, div, ins {max-width: 100% !important;}
+
+body {position: static;}
+.loader {overflow: hidden; width: 1px; height: 1px; position: absolute;}
+#body_bg {position: relative;}
+#page-wrap {width: 100%; box-sizing: border-box;}
+#page, #body, #header, #content, #content-block, #sitebar, #content-block-info {width: 100%; box-sizing: border-box; float: none; height: auto;}
+#sitebar {padding: 20px 0;}
+#cont_title {float: none; min-height: 25px; height: auto; text-align: left;}
+
+.logos {width: 100%; float: none; margin: auto; max-width: 545px !important;}
+#content {margin: 0px; padding: 0px 20px;}
+#content-block-info {text-align: center;}
+#cont_block {float: none; display: inline-block; vertical-align: top; margin: 0px 10px 20px 10px !important;}
+#cont_block_navi {width: 100%; float: none;}
+#cont_block_navi a, #cont_block_navi span {display: inline-block; vertical-align: middle; margin: 2px 0px;}
+#cont_block_news {width: 100%; float: none;}
+#cont_block_news_post {width: 100%; margin: 15px 0 15px 0px;}
+.cont_block_news_post_cont_t {width: 100%; box-sizing: border-box;}
+
+#top_menu {width: 100%; height: auto; margin: 0px; background-size: 100% 110%;}
+#top_menu ul {width: 100%; height: auto; margin: 0px; text-align: center;}
+ul.dropdown li.dropdown-top {cursor: pointer; display: inline-block; vertical-align: top; float: none; margin: 0px;}
+ul.dropdown li.dropdown-top:last-child {background: none;}
+ul.dropdown li.dropdown-top:first-child > a {pointer-events: none;}
+ul.dropdown li.dropdown-top > a[href="/#"] {pointer-events: none;}
+
+.share42init {text-align: center;}
+#sitebar_game_title {width: 100%; box-sizing: border-box; height: auto; min-height: 25px;}
+#sitebar_game, #sitebar_game:hover {width: 100%; height: 65px; background-size: 100% 100%; position: relative;}
+#sitebar_game {background: -webkit-linear-gradient(top, #010f13 0%,#111e22 100%); background: -moz-linear-gradient(top, #010f13 0%,#111e22 100%); background: -o-linear-gradient(top, #010f13 0%,#111e22 100%); background: linear-gradient(top, #010f13 0%,#111e22 100%); border-radius: 5px;}
+#sitebar_game:hover {background: -webkit-linear-gradient(top, #38bac4 0%, #033a46 20%, #04333e 50%, #033a46 80%, #38bac4 100%); background: -moz-linear-gradient(top, #38bac4 0%, #033a46 20%, #04333e 50%, #033a46 80%, #38bac4 100%); background: -o-linear-gradient(top, #38bac4 0%, #033a46 20%, #04333e 50%, #033a46 80%, #38bac4 100%); background: linear-gradient(top, #38bac4 0%, #033a46 20%, #04333e 50%, #033a46 80%, #38bac4 100%);}
+#sitebar_game_img {position: absolute; left: 0px; top: 0px;}
+.sitebar_game_name {width: 90%; width: calc(100% - 66px);}
+.sitebar_game_name a {display: block; width: 100%;}
+#sitebar_search {width: 100%; box-sizing: border-box; padding: 10px; height: 50px; position: relative;}
+#sitebar_search input {width: 100%; width: calc(100% - 42px); box-sizing: border-box;}
+#sitebar_search .submit {position: absolute; right: 9px; top: 9px;}
+
+#zalu_bg {position: static; height: auto; margin-top: 0px;}
+#zalu_norm_w {width: 100%; box-sizing: border-box; text-align: center;}
+#zalu_game {float: none; display: inline-block; vertical-align: top; margin: 0px 10px 20px 10px !important;}
+#zalu_game_img:hover span {display: none;}
+#zalu_but_bg, #zalu_top_bg {position: static; margin-top: 0px; background-size: 100% 100%; background-repeat: no-repeat;}
+
+#cont_xleb_kroski, #cont_block_game {width: 100%; height: auto; float: none;}
+#cont_xleb_kroski a {float: none; display: inline;}
+#cont_xleb_kroski span {float: none; display: inline-block; vertical-align: top;}
+#cont_block_game_frame {width: auto; height: auto; box-sizing: border-box; float: none; margin-left: 160px;}
+#cont_block_game_frame iframe {width: 100% !important;}
+#cont_block_game_btn a, #cont_game_btn a {margin: 17px 0 12px 0; display: block; width: 100%; height: auto; min-height: 57px; background-repeat: no-repeat; background-position: top center; float: none;}
+#cont_block_game_btn a:hover, #cont_game_btn a:hover {margin: 17px 0 12px 0; display: block; width: 100%; height: auto; min-height: 57px; background-repeat: no-repeat; background-position: center -68px; float: none;}
+#cont_game_btn a:hover {background-position: center -73px;}
+.cont_block_news_post_cont {width: 100%; box-sizing: border-box;}
+.cont_block_news_post_cont_text_big {overflow: hidden;}
+
+.niz_b {float: none; width: 100%; overflow: hidden; box-sizing: border-box;}
+.niz_b li {width: 30.333%; margin-left: 3%;}
+
+#cont_block_news_c2 {float: none;}
+#cont_block_news_post_c2 {width: 100%; margin: 15px 0 15px 0px;}
+#cont_block_news_post_cont_c2 {width: 100%; box-sizing: border-box; height: auto; min-height: 150px;}
+#cont_block_news_post_cont_text_c2 {margin-left: 0px; margin-top: -4px;}
+#cont_block_news_post_cont_c2 img {margin-right: 10px;}
+#cont_block_news_post_more_c22 {float: none; margin: 15px 0px 0px 0px;}
+#cont_block_btn_s {position: static; text-align: right;}
+#cont_block_btn_s #b_1 a {position: static;}
+#cont_block_btn_s #b_2 a {position: static; margin: 0px;}
+#cont_block_btn_s #b_1, #cont_block_btn_s #b_2 {width: auto; text-align: left;}
+#cont_block_btn_s #b_1 a:hover {position: static; height: 36px;}
+#cont_block_btn_s #b_2 a:hover {position: static; height: 36px;}
+
+#content-block-info2 {width: 100%; float: none; text-align: center;}
+#cont_rate {width: 100%; float: none; margin: 0 0 10px 0px;}
+#cont_rate_kaz_title {width: 100%; float: none;}
+#cont_rate_kaz_name_title, #cont_rate_kaz_rate_title, #cont_rate_kaz_soft_title, #cont_rate_kaz_obz_title, #cont_rate_kaz_site_title {width: auto; float: none; display: inline-block; vertical-align: top; box-sizing: border-box; width: 19.2%;}
+#cont_rate_kaz {width: 100%; float: none; box-sizing: border-box;}
+#cont_rate_kaz_name, #cont_rate_kaz_rate, #cont_rate_kaz_soft, #cont_rate_kaz_obz, #cont_rate_kaz_site {width: auto; float: none; display: inline-block; vertical-align: top; box-sizing: border-box; width: 19.2%;}
+
+#cont_block_news_c {float: none;}
+#cont_block_news_post_c {width: 100%;margin: 15px 0 15px 0px;}
+#cont_block_news_post_cont_c {width: 100%; height: auto; min-height: 150px; box-sizing: border-box;}
+#cont_block_news_post_cont_text_c {margin-left: 0px;}
+#cont_block_news_post_cont_c img {margin-right: 10px;}
+#cont_block_news_post_more_c {text-align: right;}
+#cont_block_news_post_more_c a {float: none;}
+
+#cont_block_news_post_n {float: none; width: 100%; height: auto;}
+#cont_block_news_post_post {width: 100%; margin: 15px 0 0px 0px; float: none;}
+#cont_block_news_post_cont_post {float: none; box-sizing: border-box; width: 100%;}
+#cont_block_news_post_cont_text_post {float: none;}
+.content-block-poxozie {width: 100%; overflow: auto; overflow-y: hidden; float: none; height: auto; text-align: center; white-space: nowrap;}
+#cont_block_pn {float: none; text-align: left; white-space: normal; display: inline-block; vertical-align: top;}
+
+#cont_info_kaz {width: 100%; float: none; margin: 10px 0 0 0px; text-align: center;}
+#cont_info_kaz_block_1 {height: auto; padding-top: 10px; text-align: left; float: none; height: auto; display: inline-block; vertical-align: top;}
+#cont_info_kaz_block {height: auto; padding-top: 10px; float: none; display: inline-block; vertical-align: top;}
+#cont_info_kaz_block #title, #cont_info_kaz_block #img, #cont_info_kaz_block #rate {height: auto; float: none;}
+#cont_info_kaz_block_1 #c_b_o {overflow: hidden;}
+
+.sk_ser {width: 100%; float: none;}
+
+#footer, #footer_title, #footer_copyr {width: 100%; box-sizing: border-box; float: none; height: auto;}
+#footer_title ul {width: 100%; text-align: center; padding: 0px 17px; box-sizing: border-box;}
+#footer_title .cs_1, #footer_title li {float: none; display: inline-block; vertical-align: top; border: none; margin: 3px;}
+#footer_copyr {margin-top: 12px; padding: 0px 20px;}
+#footer_title a {margin: 0px;}
+#footer_bottom {width: 100%; box-sizing: border-box; padding: 70px 10px 50px 10px; max-width: 730px !important; margin: auto;}
+#footer_bottom_left, #footer_bottom_center, #footer_bottom_right {float: none; display: inline-block; vertical-align: top; box-sizing: border-box; width: 32.333%;}
+}
+@media screen and (max-width: 900px) {
+.cont_block_news_post_cont img {margin: 10px auto; float: none; display: block;}
+}
+@media screen and (max-width: 750px) {
+#cont_rate_kaz_soft_title {display: none;}
+#cont_rate_kaz_name_title, #cont_rate_kaz_rate_title, #cont_rate_kaz_obz_title, #cont_rate_kaz_site_title {width: 24.25%;}
+#cont_rate_kaz_soft {display: none;}
+#cont_rate_kaz_name, #cont_rate_kaz_rate, #cont_rate_kaz_obz, #cont_rate_kaz_site {width: 24.25%;}
+}
+@media screen and (max-width: 730px) {
+#top_menu {margin-top: 10px; padding: 10px 20px; box-sizing: border-box; background-size: 100% 105%;}
+#top_menu ul ul {margin: 0px;}
+ul.dropdown li.dropdown-top {margin: 0px; height: auto; background: none; padding: 4px 0px;}
+ul.dropdown li.dropdown-top:hover {background-image: url(/wp-content/themes/gump/img/top_menu_a_hover_bg.png); background-position: top, center; background-repeat: no-repeat; background: url(/wp-content/themes/gump/img/top_menu_a_hover_bg.png) no-repeat center;}
+}
+@media screen and (max-width: 700px) {
+#cont_block_game_frame {margin-left: 0px;}
+.Vwidget {width: 100%; float: none;}
+.Vwidget a.up, .Vwidget a.down {display: none;}
+.Vwidget .VjCarouselLite {height: auto !important;}
+.Vwidget .VjCarouselLite ul {white-space: nowrap; height: auto !important; top: 0px !important; overflow: auto;}
+.Vwidget .VjCarouselLite ul li {white-space: normal; display: inline-block; vertical-align: top;}
+.VjCarouselLite li .text {float: left; margin-left: 2px;}
+}
+@media screen and (max-width: 600px) {
+.niz_b li {width: 47%;}
+#cont_rate_kaz_rate_title {display: none;}
+#cont_rate_kaz_name_title, #cont_rate_kaz_obz_title, #cont_rate_kaz_site_title {width: 32.33%;}
+#cont_rate_kaz_rate {display: none;}
+#cont_rate_kaz_name, #cont_rate_kaz_obz, #cont_rate_kaz_site {width: 32.33%;}
+}
+@media screen and (max-width: 560px) {
+#body_bg {background: none;}
+#footer {background: url(/wp-content/themes/gump/img/fotter_bg.png) no-repeat; background-position: 50% -490px;}
+#footer_bottom {padding: 30px 10px 20px 10px; }
+#footer_bottom_left {display: none;}
+#footer_bottom_center, #footer_bottom_right {width: 49%;  margin-bottom: 10px;background: none;}
+}
+@media screen and (max-width: 545px) {
+#zalu_game, #cont_block {margin: 0px 2% 4% 2% !important; box-sizing: border-box; width: 45%; height: auto;}
+#zalu_game { padding-bottom: 4%;}
+#cont_block_title {width: 100%; overflow: hidden; white-space: nowrap;}
+#cont_block_img {width: 100%; height: auto; padding: 0px;}
+#cont_block_btn_t {margin-top: 1px;}
+#cont_block_btn_t #b_1 a {position: static; width: 100%; background-repeat: no-repeat; background-size: 100% 200%;}
+#cont_block_btn_t #b_1 a:hover {background-position: 0% 100%; position: static; width: 100%; background-size: 100% 200%; height: 33px; margin-top: -5px;}
+#cont_block_btn_t #b_2 a {position: static; width: 100%; background-repeat: no-repeat; margin: 0px; background-size: 100% 200%;}
+#cont_block_btn_t #b_2 a:hover {background-position: 0% 100%; position: static; width: 100%; background-size: 100% 200%; height: 33px; margin-top: -5px;}
+#b_1, #b_2 {display: inline-block; vertical-align: top; width: 48%;}
+}
+@media screen and (max-width: 531px) {
+#cont_info_kaz_block_1 {width: 100%;}
+#cont_info_kaz_block_1 #c_b_i {height: 25px; line-height: 25px; width: 30%; float: none; display: inline-block; vertical-align: top;}
+#cont_info_kaz_block_1 #c_b_o {height: 25px; line-height: 25px; width: 69%; float: none; display: inline-block; vertical-align: top;}
+}
+@media screen and (max-width: 500px) {
+body {background-position: 51% 0px;}
+}
+@media screen and (max-width: 470px) {
+#top_menu {padding: 12px; background-size: auto 103%; background-position: top center;}
+.cont_block_news_post_cont img {float: none; margin: 10px auto 10px auto; display: block;}
+}
+@media screen and (max-width: 430px) {
+.logos {height: 110px;}
+body {background-size: 1000px 738px;}
+#cont_rate_kaz_obz {padding: 14px 0px 14px 5px;}
+}
+@media screen and (max-width: 410px) {
+#cont_block_news_post_cont_c2 img {margin-right: auto; margin-left: auto; display: block; float: none; margin-bottom: 10px;}
+#cont_block_btn_s {text-align: center;}
+#cont_rate_kaz_title {display: none;}
+#cont_rate_kaz_name {width: 100%;}
+#cont_rate_kaz_obz, #cont_rate_kaz_site {width: auto; padding: 14px 0px 14px 0px;}
+#cont_block_news_post_cont_c img {margin: 10px auto; display: block; float: none;}
+#cont_block_news_post_cont_post_imgs {margin: 10px auto; margin-top: 0px; display: block; float: none;}
+#cont_info_kaz_block_1 #c_b_i {width: 40%;}
+#cont_info_kaz_block_1 #c_b_o {width: 59%;}
+}
+@media screen and (max-width: 370px) {
+#b_1, #b_2 {width: 100%;}
+#cont_block_btn_t #b_1 a:hover {height: 33px; margin-top: -5px; margin-bottom: 5px;}
+#cont_block_btn_t #b_2 a:hover {height: 33px; margin-top: -5px; margin-bottom: 5px;}
+.niz_b li {width: 97%;}
+#footer_bottom_center {width: 100%; margin-bottom: 20px;}
+#footer_bottom_right {width: 100%; margin-bottom: 0px;}
+}
+@media screen and (max-width: 329px) {
+.cont_block_news_post_cont_text_t img {float: none; margin: 10px auto 10px auto; display: block;}
+}
